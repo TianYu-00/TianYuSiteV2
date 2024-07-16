@@ -1,0 +1,32 @@
+module.exports = [
+  {
+    portfolio_name: "Nc News API",
+    portfolio_short_description: "Random Short Description",
+    portfolio_start_date: "May 28 2024",
+    portfolio_project_type: "Northcoders Project",
+    portfolio_description: "Random Long Description",
+    portfolio_youtube: "",
+    portfolio_github: "https://github.com/TianYu-00/be-nc-news",
+    portfolio_demo: "https://nc-portfolio-1.onrender.com/api",
+  },
+  {
+    portfolio_name: "Nc News",
+    portfolio_short_description: "Random Short Description",
+    portfolio_start_date: "June 17 2024",
+    portfolio_project_type: "Northcoders Project",
+    portfolio_description: "Random Long Description",
+    portfolio_youtube: "https://www.youtube.com/watch?v=UvF9yI6z3YE",
+    portfolio_github: "https://github.com/TianYu-00/fe-nc-news",
+    portfolio_demo: "https://fe-nc-news-tian.netlify.app/",
+  },
+  {
+    portfolio_name: "Whimsy Date",
+    portfolio_short_description: "Random Short Description",
+    portfolio_start_date: "July 01 2024",
+    portfolio_project_type: "Northcoders Project",
+    portfolio_description: "Random Long Description",
+    portfolio_youtube: "https://www.youtube.com/watch?v=3c1I65A9X9w",
+    portfolio_github: "https://github.com/TianYu-00/WhimsyDate",
+    portfolio_demo: "",
+  },
+];

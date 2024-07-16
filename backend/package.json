@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node listen.js"
+    "start": "node listen.js",
+    "setup-db": "psql -f ./db/portfolio.sql",
+    "seed": "PGDATABASE=tian_portfolio node db/run-seed.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "pg": "^8.12.0"
+    "pg": "^8.12.0",
+    "pg-format": "^1.0.4"
   }
 }
