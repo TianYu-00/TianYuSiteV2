@@ -1,18 +1,20 @@
 const { Pool } = require("pg");
-const ENV = process.env.NODE_ENV || "development";
+require("dotenv").config();
 
-require("dotenv").config({
-  path: `${__dirname}/../.env.${ENV}`,
+if (
+  !process.env.POSTGRES_USER ||
+  !process.env.POSTGRES_PASSWORD ||
+  !process.env.DB_HOST ||
+  !process.env.DB_PORT ||
+  !process.env.POSTGRES_DB
+) {
+  throw new Error("Environment Variables Not Setup Correctly");
+}
+
+const connectionString = `postgres://${process.env.POSTGRES_USER}:${process.env.POSTGRES_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.POSTGRES_DB}`;
+
+const pool = new Pool({
+  connectionString: connectionString,
 });
 
-if (!process.env.PGDATABASE && !process.env.DATABASE_URL) {
-  throw new Error("PGDATABASE or DATABASE_URL not set");
-}
-
-const config = {};
-if (ENV === "production") {
-  config.connectionString = process.env.DATABASE_URL;
-  config.max = 2;
-}
-
-module.exports = new Pool(config);
+module.exports = pool;
