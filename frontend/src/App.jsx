@@ -11,18 +11,20 @@ import Portfolios from "./pages/Portfolios";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="flex flex-col min-h-screen mx-auto max-w-screen-xl px-8 py-8 border border-black text-center">
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/portfolios" element={<Portfolios />} />
-          <Route path="*" element={<FallbackRoute />} />
-        </Routes>
+        <main className="flex-grow ">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/portfolios" element={<Portfolios />} />
+            <Route path="*" element={<FallbackRoute />} />
+          </Routes>
+        </main>
         <Footer />
-      </BrowserRouter>
-    </>
+      </div>
+    </BrowserRouter>
   );
 }
 

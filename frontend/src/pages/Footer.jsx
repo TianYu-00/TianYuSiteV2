@@ -2,8 +2,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
+    <div className="border p-4 text-center">
+      <p>Development in progress</p>
+      <p>Copyright © 2023 TianYu. All rights reserved.</p>
     </div>
   );
 }
