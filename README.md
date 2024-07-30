@@ -6,3 +6,5 @@
 
 
 ## Frotnend
+#### React
+#### Tailwind
