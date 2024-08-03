@@ -1,5 +1,20 @@
 {
   "GET /api": {
     "description": "responds with a list of available endpoints"
+  },
+  "GET /api/portfolios": {
+    "description": "responds with a list of portfolios",
+    "responds": [
+      {
+        "portfolio_id": 1,
+        "portfolio_name": "Whimsy Date",
+        "portfolio_short_description": "An app to allow users to generate suggestions for date night, whether that is with your partner, friend, or as a solo outing.",
+        "portfolio_start_date": "2024-06-30T23:00:00.000Z",
+        "portfolio_project_type": "Northcoders Project",
+        "portfolio_youtube": "https://www.youtube.com/watch?v=3c1I65A9X9w",
+        "portfolio_github": "https://github.com/TianYu-00/WhimsyDate",
+        "portfolio_demo": ""
+      }
+    ]
   }
 }
