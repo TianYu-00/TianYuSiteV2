@@ -1,8 +1,8 @@
 const db = require("./connection");
 const format = require("pg-format");
-const portfolios = require("./data/portfolios");
+// const portfolios = require("./data/portfolios");
 
-function seed() {
+function seed({ portfolios }) {
   return db
     .query("DROP TABLE IF EXISTS portfolio_table;")
     .then(() => {
