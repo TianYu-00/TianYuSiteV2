@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
+import RecentPortfolios from "../components/RecentPortfolios";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
 
       {/* Personal Statement */}
       <div className="border">
-        <h2 className="font-bold text-2xl">Personal Statement</h2>
+        <h2 className="font-bold text-4xl m-10">ABOUT</h2>
         <p>
           From a young age, game development and software development have always been my dream career paths and I knew
           it was something that I wanted to do in the future. Through my academic background in game development, I have
@@ -33,7 +34,7 @@ export default function Home() {
 
       {/* Skills */}
       <div className="border">
-        <h2 className="font-bold text-2xl">Skills</h2>
+        <h2 className="font-bold text-4xl m-10">SKILLS</h2>
         <ul>
           <li>
             <strong>Programming Languages:</strong> C#, JavaScript, Python.
@@ -56,7 +57,8 @@ export default function Home() {
 
       {/* Projects */}
       <div className="border">
-        <h2 className="font-bold text-2xl">Recent Projects</h2>
+        <h2 className="font-bold text-4xl m-10">RECENT PROJECTS</h2>
+        <RecentPortfolios></RecentPortfolios>
         <Link to="/portfolios" className="border">
           Browse More
         </Link>
@@ -64,7 +66,7 @@ export default function Home() {
 
       {/* Education */}
       <div className="border">
-        <h2 className="font-bold text-2xl">Education</h2>
+        <h2 className="font-bold text-4xl m-10">EDUCATION</h2>
         <div>
           <strong>Northcoders | April 2024 - July 2024</strong>
           <p>JavaScript Software Development</p>
@@ -93,23 +95,23 @@ export default function Home() {
 
       {/* Interest and Hobbies */}
       <div className="border">
-        <h2 className="font-bold text-2xl">Interest/Hobbies</h2>
+        <h2 className="font-bold text-4xl m-10">INTEREST/HOBBIES</h2>
         <ul>
           <li>
-            Programming: I love turning ideas into reality by developing applications, websites, and games in my spare
-            time. It’s both a creative outlet and a constant learning journey.
+            <strong>Programming</strong>: I love turning ideas into reality by developing applications, websites, and
+            games in my spare time. It’s both a creative outlet and a constant learning journey.
           </li>
           <li>
-            Gaming: I’m an avid gamer, particularly fond of puzzle games and roguelikes. They challenge my
-            problem-solving skills and provide endless fun.
+            <strong>Gaming</strong>: I’m an avid gamer, particularly fond of puzzle games and roguelikes. They challenge
+            my problem-solving skills and provide endless fun.
           </li>
           <li>
-            Sports: Whether it’s badminton, swimming, basketball, rock climbing, or ping pong, I enjoy staying active
-            and spending quality time with friends and family through sports.
+            <strong>Sports</strong>: Whether it’s badminton, swimming, basketball, rock climbing, or ping pong, I enjoy
+            staying active and spending quality time with friends and family through sports.
           </li>
           <li>
-            Travelling: Exploring new destinations and immersing myself in different cultures is a passion of mine. I
-            especially enjoy tasting local cuisines and learning about their culinary traditions.
+            <strong>Travelling</strong>: Exploring new destinations and immersing myself in different cultures is a
+            passion of mine. I especially enjoy tasting local cuisines and learning about their culinary traditions.
           </li>
         </ul>
       </div>

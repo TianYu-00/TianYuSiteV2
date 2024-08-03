@@ -12,7 +12,8 @@ import Portfolios from "./pages/Portfolios";
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen mx-auto max-w-screen-xl px-8 py-8 border border-black text-center">
+      {/* max-w-screen-xl */}
+      <div className="flex flex-col min-h-screen mx-auto px-8 py-8 border border-black text-center">
         <Header />
         <main className="flex-grow ">
           <Routes>
