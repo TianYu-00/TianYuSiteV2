@@ -20,9 +20,8 @@ function createPortfolioTable() {
         portfolio_id SERIAL PRIMARY KEY,
         portfolio_name VARCHAR(50) NOT NULL,
         portfolio_short_description TEXT NOT NULL,
-        portfolio_start_date VARCHAR(50) NOT NULL,
+        portfolio_start_date DATE NOT NULL,
         portfolio_project_type VARCHAR(100) NOT NULL,
-        portfolio_description TEXT NOT NULL,
         portfolio_youtube TEXT,
         portfolio_github TEXT,
         portfolio_demo TEXT
@@ -36,7 +35,6 @@ function insertPortfolios(portfolios) {
         portfolio_short_description, 
         portfolio_start_date, 
         portfolio_project_type, 
-        portfolio_description, 
         portfolio_youtube, 
         portfolio_github, 
         portfolio_demo
@@ -46,7 +44,6 @@ function insertPortfolios(portfolios) {
       p.portfolio_short_description,
       p.portfolio_start_date,
       p.portfolio_project_type,
-      p.portfolio_description,
       p.portfolio_youtube,
       p.portfolio_github,
       p.portfolio_demo,
@@ -56,7 +53,7 @@ function insertPortfolios(portfolios) {
   return db
     .query(query)
     .then(() => {
-      console.log("Portfolios inserted successfully.");
+      // console.log("Portfolios inserted successfully.");
     })
     .catch((err) => {
       console.error("Error inserting portfolios:", err);

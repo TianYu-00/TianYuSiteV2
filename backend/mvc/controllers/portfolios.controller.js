@@ -1,6 +1,9 @@
-const { portfoliosData } = require("../models/portfolios.model");
-exports.portfolios_controller = (request, response) => {
-  portfoliosData().then((data) => {
-    response.status(200).send(data.rows);
-  });
+const { selectPortfolios } = require("../models/portfolios.model");
+exports.getPortfolios = (request, response, next) => {
+  const query = request.query;
+  selectPortfolios(query)
+    .then((data) => {
+      response.status(200).send(data.rows);
+    })
+    .catch(next);
 };

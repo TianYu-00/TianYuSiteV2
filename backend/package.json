@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "start": "node listen.js",
+    "startDev": "nodemon listen.js",
     "setup-db": "psql -f ./db/portfolio.sql",
     "seed": "node db/run-seed.js",
     "seed-prod": "NODE_ENV=production npm run seed"
@@ -15,7 +16,9 @@
   "description": "",
   "devDependencies": {
     "jest": "^29.7.0",
-    "nodemon": "^3.1.4"
+    "jest-sorted": "^1.0.15",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
