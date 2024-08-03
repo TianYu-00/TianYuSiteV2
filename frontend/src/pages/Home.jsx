@@ -3,19 +3,34 @@ import { ReactTyped } from "react-typed";
 import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import RecentPortfolios from "../components/RecentPortfolios";
+import ScrollAnimation from "react-animate-on-scroll"; // https://dbramwell.github.io/react-animate-on-scroll/#home
 
 export default function Home() {
   return (
     <div>
       {/* Name/Info */}
-      <div className="border">
-        <p>
-          Hello World, I'm <ReactTyped strings={["Tian", "ZiLiang Wu"]} typeSpeed={100} backSpeed={50} loop />
-        </p>
-        <div className="flex flex-row justify-center items-center">
-          <IconBrandGithub stroke={1.5} />
-          <IconBrandLinkedin stroke={1.5} />
-          <IconMail stroke={1.5} />
+      <div className="min-h-screen flex flex-col items-center justify-center p-4">
+        <ScrollAnimation animateIn="bounceInRight">
+          <h1 className="text-center mb-10 text-5xl md:text-6xl lg:text-9xl font-bold max-w-[90%] text-ellipsis">
+            Hello World, I'm <ReactTyped strings={["Tian", "ZiLiang Wu"]} typeSpeed={100} backSpeed={50} loop />
+          </h1>
+        </ScrollAnimation>
+
+        <div className="flex flex-row gap-4">
+          <ScrollAnimation animateIn="bounceInLeft">
+            <IconBrandGithub
+              stroke={1.5}
+              size={62}
+              color="black"
+              className="border rounded-full p-1 bg-white hover:bg-yellow-500"
+            />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">
+            <IconBrandLinkedin stroke={1.5} size={62} className="border rounded-full p-1 hover:bg-yellow-500" />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="bounceInRight">
+            <IconMail stroke={1.5} size={62} color="black" className="border rounded-full p-1 hover:bg-yellow-500" />
+          </ScrollAnimation>
         </div>
       </div>
 
@@ -95,7 +110,7 @@ export default function Home() {
 
       {/* Interest and Hobbies */}
       <div className="border">
-        <h2 className="font-bold text-4xl m-10">INTEREST/HOBBIES</h2>
+        <h2 className="font-bold text-4xl m-10">HOBBIES</h2>
         <ul>
           <li>
             <strong>Programming</strong>: I love turning ideas into reality by developing applications, websites, and
