@@ -10,20 +10,27 @@ import Home from "./pages/Home";
 import Portfolios from "./pages/Portfolios";
 
 function App() {
+  const [theme, setTheme] = useState("dark"); // Default theme
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  };
   return (
     <BrowserRouter>
       {/* max-w-screen-xl */}
-      <div className="flex flex-col min-h-screen mx-auto px-8 py-8 border border-black text-center">
-        <Header />
-        <main className="flex-grow ">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/portfolios" element={<Portfolios />} />
-            <Route path="*" element={<FallbackRoute />} />
-          </Routes>
-        </main>
-        <Footer />
+      <div className={theme}>
+        <div className="flex flex-col min-h-screen mx-auto px-8 py-8 border border-black text-center">
+          <Header toggleTheme={toggleTheme} theme={theme} />
+          <main className="flex-grow ">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/portfolios" element={<Portfolios />} />
+              <Route path="*" element={<FallbackRoute />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </div>
     </BrowserRouter>
   );
