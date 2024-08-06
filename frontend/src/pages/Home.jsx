@@ -10,27 +10,23 @@ export default function Home() {
     <div>
       {/* Name/Info */}
       <div className="min-h-screen flex flex-col items-center justify-center p-4">
-        <ScrollAnimation animateIn="bounceInRight">
+        <ScrollAnimation animateIn="bounceInRight" initiallyVisible={true}>
           <h1 className="text-center mb-10 text-5xl md:text-6xl lg:text-9xl font-bold max-w-[90%] text-ellipsis">
             Hello World, I'm <ReactTyped strings={["Tian", "ZiLiang Wu"]} typeSpeed={100} backSpeed={50} loop />
           </h1>
         </ScrollAnimation>
 
         <div className="flex flex-row gap-4">
-          <ScrollAnimation animateIn="bounceInLeft">
-            <IconBrandGithub
-              stroke={1.5}
-              size={62}
-              color="black"
-              className="border rounded-full p-1 bg-white hover:bg-yellow-500"
-            />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
-            <IconBrandLinkedin stroke={1.5} size={62} className="border rounded-full p-1 hover:bg-yellow-500" />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="bounceInRight">
-            <IconMail stroke={1.5} size={62} color="black" className="border rounded-full p-1 hover:bg-yellow-500" />
-          </ScrollAnimation>
+          <IconBrandGithub
+            stroke={1.5}
+            size={62}
+            color="black"
+            className="border rounded-full p-1 bg-white hover:bg-yellow-500"
+          />
+
+          <IconBrandLinkedin stroke={1.5} size={62} className="border rounded-full p-1 hover:bg-yellow-500" />
+
+          <IconMail stroke={1.5} size={62} color="black" className="border rounded-full p-1 hover:bg-yellow-500" />
         </div>
       </div>
 
