@@ -31,7 +31,7 @@ export default function Home() {
       </div>
 
       {/* Personal Statement */}
-      <div className="">
+      <div className="max-w-screen-xl m-auto">
         <h2 className="text-copy-primary font-bold text-4xl m-10 ">ABOUT</h2>
         <ScrollAnimation animateIn="fadeIn">
           <p className="text-copy-primary">
@@ -45,8 +45,10 @@ export default function Home() {
         </ScrollAnimation>
       </div>
 
+      <div className="m-52"></div>
+
       {/* Skills */}
-      <div className="">
+      <div className="max-w-screen-xl m-auto">
         <h2 className="text-copy-primary font-bold text-4xl m-10">SKILLS</h2>
         <ul>
           <ScrollAnimation animateIn="fadeIn">
@@ -70,17 +72,22 @@ export default function Home() {
         </ul>
       </div>
 
+      <div className="m-52"></div>
+
       {/* Projects */}
       <div className="">
         <h2 className="text-copy-primary font-bold text-4xl m-10">RECENT PROJECTS</h2>
         <RecentPortfolios></RecentPortfolios>
+        <div className="m-20"></div>
         <Link to="/portfolios" className="text-copy-primary border p-2 rounded-2xl hover:bg-cta/80">
           Browse More
         </Link>
       </div>
 
+      <div className="m-52"></div>
+
       {/* Education */}
-      <div className="">
+      <div className="max-w-screen-xl m-auto">
         <h2 className="text-copy-primary font-bold text-4xl m-10">EDUCATION</h2>
         <ScrollAnimation animateIn="fadeIn">
           <div className="text-copy-primary">
@@ -112,8 +119,10 @@ export default function Home() {
         </ScrollAnimation>
       </div>
 
+      <div className="m-52"></div>
+
       {/* Interest and Hobbies */}
-      <div className="">
+      <div className="max-w-screen-xl m-auto">
         <h2 className="text-copy-primary font-bold text-4xl m-10">HOBBIES</h2>
         <ul>
           <ScrollAnimation animateIn="fadeIn">
