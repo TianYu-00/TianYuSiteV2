@@ -3,7 +3,7 @@ import { fetchPortfolios } from "../api";
 import ScrollAnimation from "react-animate-on-scroll";
 
 //#B8D060
-
+// className="text-copy-primary"
 export default function RecentPortfolios() {
   const [basePortfolios, setBasePortfolios] = useState([]);
   useEffect(() => {
@@ -32,10 +32,10 @@ export default function RecentPortfolios() {
               </ScrollAnimation>
             </div>
 
-            <div className="p-4 md:w-1/2 flex flex-col justify-center">
+            <div className="text-copy-primary p-4 md:w-1/2 flex flex-col justify-center">
               <ScrollAnimation animateIn="fadeIn">
                 <p className="text-xl font-semibold mb-2">{portfolio.portfolio_name}</p>
-                <p className="mb-4">{portfolio.portfolio_short_description}</p>
+                <p className="text-copy-primary/80 mb-4">{portfolio.portfolio_short_description}</p>
                 <div>
                   {portfolio.portfolio_demo && (
                     <a
