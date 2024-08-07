@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { ReactTyped } from "react-typed";
-import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandLinkedin, IconMail, IconUser } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import RecentPortfolios from "../components/RecentPortfolios";
 import ScrollAnimation from "react-animate-on-scroll"; // https://dbramwell.github.io/react-animate-on-scroll/#home
+import { GlowCapture, Glow } from "@codaworks/react-glow";
+import { UserIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
-    <div>
+    <GlowCapture>
       {/* Name/Info */}
       <div className="min-h-screen flex flex-col items-center justify-center p-4">
         <ScrollAnimation animateIn="bounceInRight" initiallyVisible={true}>
@@ -30,22 +32,38 @@ export default function Home() {
         </div>
       </div>
 
+      <Glow>
+        <div className="mt-24 mb-24 glow:bg-red-500/25 h-10 rounded-2xl" />
+      </Glow>
+
       {/* Personal Statement */}
-      <div className="max-w-screen-xl m-auto">
-        <h2 className="text-copy-primary font-bold text-4xl m-10 ">ABOUT</h2>
-        <ScrollAnimation animateIn="fadeIn">
-          <p className="text-copy-primary">
-            From a young age, game development and software development have always been my dream career paths and I
-            knew it was something that I wanted to do in the future. Through my academic background in game development,
-            I have developed strong skills in problem-solving, teamwork, and quick adaptation to new technologies,
-            tools, and various programming languages. I'm looking forward to transitioning to software development as a
-            junior software developer, applying all my previous knowledge in programming to this industry to create
-            impactful solutions with innovation.
-          </p>
-        </ScrollAnimation>
+      <div className="max-w-screen-xl mx-auto">
+        <h2 className="text-copy-primary font-bold text-4xl my-10">ABOUT</h2>
+
+        <Glow>
+          <div className="flex flex-col md:flex-row border-4 border-background glow:bg-red-500/25 glow:border-red-500/75 rounded-2xl ">
+            <div className="flex justify-center items-center p-4 md:w-1/2 border-yellow-500 my-32">
+              <UserIcon className="size-60 text-blue-500" />
+            </div>
+            <div className="flex justify-center items-center p-4 md:w-1/2 border-pink-500">
+              <ScrollAnimation animateIn="fadeIn">
+                <p className="text-copy-primary text-center md:text-left">
+                  From a young age, game development and software development have always been my dream career paths and
+                  I knew it was something that I wanted to do in the future. Through my academic background in game
+                  development, I have developed strong skills in problem-solving, teamwork, and quick adaptation to new
+                  technologies, tools, and various programming languages. I'm looking forward to transitioning to
+                  software development as a junior software developer, applying all my previous knowledge in programming
+                  to this industry to create impactful solutions with innovation.
+                </p>
+              </ScrollAnimation>
+            </div>
+          </div>
+        </Glow>
       </div>
 
-      <div className="m-52"></div>
+      <Glow>
+        <div className="mt-24 mb-24 glow:bg-orange-500/25 h-10 rounded-2xl" />
+      </Glow>
 
       {/* Skills */}
       <div className="max-w-screen-xl m-auto">
@@ -72,7 +90,9 @@ export default function Home() {
         </ul>
       </div>
 
-      <div className="m-52"></div>
+      <Glow>
+        <div className="mt-24 mb-24 glow:bg-yellow-500/25 h-10 rounded-2xl" />
+      </Glow>
 
       {/* Projects */}
       <div className="">
@@ -84,7 +104,9 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="m-52"></div>
+      <Glow>
+        <div className="mt-24 mb-24 glow:bg-green-500/25 h-10 rounded-2xl" />
+      </Glow>
 
       {/* Education */}
       <div className="max-w-screen-xl m-auto">
@@ -119,7 +141,9 @@ export default function Home() {
         </ScrollAnimation>
       </div>
 
-      <div className="m-52"></div>
+      <Glow>
+        <div className="mt-24 mb-24 glow:bg-blue-500/25 h-10 rounded-2xl" />
+      </Glow>
 
       {/* Interest and Hobbies */}
       <div className="max-w-screen-xl m-auto">
@@ -148,6 +172,6 @@ export default function Home() {
           </ScrollAnimation>
         </ul>
       </div>
-    </div>
+    </GlowCapture>
   );
 }
