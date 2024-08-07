@@ -114,7 +114,7 @@ export default function Home() {
         <ScrollAnimation animateIn="fadeIn">
           <div className="text-copy-primary">
             <strong>Northcoders | April 2024 - July 2024</strong>
-            <p>JavaScript Software Development</p>
+            <p>Full-Stack Software Development</p>
             <p className="text-copy-secondary">
               Course Subjects: JavaScript fundamentals (Testing, Value vs Reference, Scope, Array Methods, Destructing,
               Testing Higher Order Functions, Closure, Recursion, OOP, Async, Promises, Internet and Data Fetching),
@@ -123,6 +123,7 @@ export default function Home() {
               Hooks, Sorting and Pagination, Class Components, Hosting, MUI), hands-on team project.
             </p>
           </div>
+          <br></br>
           <div className="text-copy-primary">
             <strong>Manchester Metropolitan University | September 2019 – May 2022</strong>
             <p>Computer Games Technology – Upper Second Class Honours (2.1) </p>
@@ -131,6 +132,7 @@ export default function Home() {
               Experience Design, Video Games Development, Web Applications, Web Development.
             </p>
           </div>
+          <br></br>
           <div className="text-copy-primary">
             <strong>Loreto Sixth Form College | September 2017 – August 2019</strong>
             <p>IT (Business) - Distinction Star, Distinction Star, Distinction</p>

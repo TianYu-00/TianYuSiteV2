@@ -5,7 +5,7 @@ import { Switch } from "@headlessui/react";
 
 export default function Header({ toggleTheme, theme }) {
   return (
-    <div className="flex justify-between items-center p-4 border-b-2">
+    <div className="flex justify-between items-center p-4 ">
       {/* Logo */}
       <div>
         <img src={logo} className="h-20" alt="Logo" />
