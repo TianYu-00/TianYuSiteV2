@@ -6,6 +6,7 @@ import RecentPortfolios from "../components/RecentPortfolios";
 import ScrollAnimation from "react-animate-on-scroll"; // https://dbramwell.github.io/react-animate-on-scroll/#home
 import { Glow } from "@codaworks/react-glow";
 import { UserIcon } from "@heroicons/react/24/outline";
+import Education from "../components/Education";
 
 export default function Home() {
   return (
@@ -120,35 +121,7 @@ export default function Home() {
         <div className="max-w-screen-xl m-auto">
           <h2 className="text-copy-primary font-bold text-4xl m-10 glow:text-green-500/100">EDUCATION</h2>
           <ScrollAnimation animateIn="fadeIn">
-            <div className="text-copy-primary glow:text-green-500/100">
-              <strong>Northcoders | April 2024 - July 2024</strong>
-              <p>Full-Stack Software Development</p>
-              <p className="text-copy-secondary">
-                Course Subjects: JavaScript fundamentals (Testing, Value vs Reference, Scope, Array Methods,
-                Destructing, Testing Higher Order Functions, Closure, Recursion, OOP, Async, Promises, Internet and Data
-                Fetching), backend (SQL, MVC, Seeding, Testing, Error Handling, Routers, Middleware, Development and
-                Test Databases, Complex Queries, API Hosting, Express, CI/CD), frontend (DOM, React, Data Fetching,
-                Error Handling, Custom Hooks, Sorting and Pagination, Class Components, Hosting, MUI), hands-on team
-                project.
-              </p>
-            </div>
-            <br></br>
-            <div className="text-copy-primary glow:text-green-500/100">
-              <strong>Manchester Metropolitan University | September 2019 – May 2022</strong>
-              <p>Computer Games Technology – Upper Second Class Honours (2.1) </p>
-              <p className="text-copy-secondary">
-                Course Subjects: Coding, JavaScript, Networks, Networks and Security, Product Design, Project, User
-                Experience Design, Video Games Development, Web Applications, Web Development.
-              </p>
-            </div>
-            <br></br>
-            <div className="text-copy-primary glow:text-green-500/100">
-              <strong>Loreto Sixth Form College | September 2017 – August 2019</strong>
-              <p>IT (Business) - Distinction Star, Distinction Star, Distinction</p>
-              <p className="text-copy-secondary">
-                Course Subjects: Spreadsheets, social media and business, Databases, IT systems.
-              </p>
-            </div>
+            <Education></Education>
           </ScrollAnimation>
         </div>
       </Glow>
