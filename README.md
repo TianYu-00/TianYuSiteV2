@@ -7,6 +7,6 @@ Docker Contained ✓
 Docker Contained ✓
 
 ## Frotnend
-#### React
+#### React ✓
 
-#### Tailwind
+#### Tailwind ✓
