@@ -1,12 +1,29 @@
 # TianYuSiteV2
  
 ## Backend
-#### PSQL
+PSQL ✓
 Docker Contained ✓
-#### Express.js
+Express.js ✓
 Docker Contained ✓
+Jest ✓
+Jest-Sorted ✓
+Supertest ✓
+PG-Format ✓
+Cors ✓
+DotEnv ✓
+Nodemon ✓
+
 
 ## Frotnend
 React ✓
-
+React-Router-Dom ✓
+Vite ✓
 Tailwind ✓
+Axios ✓
+React-Typed ✓
+React-Animate-On-Scroll ✓
+React-Glow ✓
+Heroicons ✓
+
+
+
