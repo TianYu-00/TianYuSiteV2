@@ -107,7 +107,7 @@ export default function Home() {
 
         <RecentPortfolios></RecentPortfolios>
         <div className="m-20"></div>
-        <Link to="/portfolios" className="text-copy-primary border p-2 rounded-2xl hover:bg-cta/80">
+        <Link to="/portfolios" className="text-copy-primary border p-2 rounded-2xl hover:bg-cta/80 hover:text-cta-text">
           Browse More
         </Link>
       </div>
