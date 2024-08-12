@@ -8,4 +8,5 @@ Docker Contained ✓
 
 ## Frotnend
 React ✓
+
 Tailwind ✓
