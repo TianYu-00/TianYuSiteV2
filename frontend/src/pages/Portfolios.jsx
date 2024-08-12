@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { fetchPortfolios } from "../api";
 import { Glow } from "@codaworks/react-glow";
+import BackToTopButton from "../components/BackToTop";
 
 export default function Portfolios() {
   const [basePortfolios, setBasePortfolios] = useState([]);
@@ -30,6 +31,7 @@ export default function Portfolios() {
 
   return (
     <>
+      <BackToTopButton></BackToTopButton>
       <Glow>
         <div className="relative flex flex-col items-center px-4 md:px-8 max-w-screen-xl m-auto">
           {/* Line */}
@@ -51,8 +53,10 @@ export default function Portfolios() {
                     index % 2 === 0 ? "md:text-right md:pr-8" : "md:text-left md:pl-8"
                   }`}
                 >
-                  <div className="p-4 rounded-lg shadow-md glow:text-green-500/100 text-copy-primary text-sm md:text-base border-2 border-border glow:border-green-700/100">
-                    <strong className="block text-base md:text-lg">{portfolio.portfolio_name}</strong>
+                  <div className="p-4 rounded-lg shadow-md text-copy-primary text-sm md:text-base border-2 border-border glow:border-green-700/100 bg-card glow:bg-green-500/25">
+                    <strong className="block text-base md:text-lg glow:text-green-500/100">
+                      {portfolio.portfolio_name}
+                    </strong>
 
                     <p className="mt-2 text-xs md:text-sm">{portfolio.portfolio_short_description}</p>
                     <div className="overflow-hidden my-2">
@@ -99,7 +103,7 @@ export default function Portfolios() {
 
       {portfoliosShowing.length >= allowedShowing ? (
         <button
-          className="text-copy-primary border-border border p-2 rounded-2xl m-2 hover:bg-cta-active hover:text-cta-text"
+          className="text-copy-primary border-border border p-2 rounded-2xl m-2 hover:bg-cta-active hover:text-cta-text bg-background"
           onClick={() => onClick_ShowMore()}
         >
           Show More

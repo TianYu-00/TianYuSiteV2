@@ -7,10 +7,12 @@ import ScrollAnimation from "react-animate-on-scroll"; // https://dbramwell.gith
 import { Glow } from "@codaworks/react-glow";
 import { UserIcon } from "@heroicons/react/24/outline";
 import Education from "../components/Education";
+import BackToTopButton from "../components/BackToTop";
 
 export default function Home() {
   return (
     <>
+      <BackToTopButton></BackToTopButton>
       {/* Name/Info */}
       <div className="min-h-screen flex flex-col items-center justify-center p-4">
         <ScrollAnimation animateIn="bounceInRight" initiallyVisible={true}>

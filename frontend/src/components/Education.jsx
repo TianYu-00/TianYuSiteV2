@@ -40,7 +40,7 @@ export default function Education() {
           <div
             className={`relative w-full md:w-1/2 ${index % 2 === 0 ? "md:text-right md:pr-8" : "md:text-left md:pl-8"}`}
           >
-            <div className="p-4 rounded-lg shadow-md glow:text-green-500/100 text-copy-primary text-sm md:text-base">
+            <div className="p-4 rounded-lg shadow-md glow:text-green-500/100 text-copy-primary text-sm md:text-base bg-card">
               <strong className="block text-base md:text-lg">
                 {event.title} | {event.date}
               </strong>
