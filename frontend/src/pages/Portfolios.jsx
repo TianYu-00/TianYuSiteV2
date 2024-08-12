@@ -36,6 +36,7 @@ export default function Portfolios() {
         <div className="relative flex flex-col items-center px-4 md:px-8 max-w-screen-xl m-auto">
           {/* Line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-px bg-gray-500/50 glow:bg-green-700/100 h-full" />
+          <div className="m-4" />
 
           {portfoliosShowing.map((portfolio, index) => {
             const formattedDate = new Date(portfolio.portfolio_start_date).toISOString().split("T")[0];
