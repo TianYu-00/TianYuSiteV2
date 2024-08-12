@@ -64,7 +64,7 @@ module.exports = [
     portfolio_short_description:
       "Platformer game set in a 2D environment where the player has the freedom to place blocks in place during their movement. The primary objective is to reach the finish point while bypassing obstacles.",
     portfolio_start_date: "2020-11-16",
-    portfolio_project_type: "Personal Project",
+    portfolio_project_type: "University Project",
     portfolio_youtube: "https://youtu.be/eNoeY-UQapw",
     portfolio_github:
       "https://github.com/TianYu-00/Unity_GameAWeek/tree/77fe1f8f5b4407798218c718fb4c3ee8180507a4/SubmitGame3%20-%20Light%26Dark/Light%26Dark",
