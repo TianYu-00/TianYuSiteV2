@@ -33,7 +33,7 @@ export default function RecentPortfolios() {
               </ScrollAnimation>
             </div>
 
-            <div className="text-copy-primary p-4 md:w-1/2 flex flex-col justify-center">
+            <div className="text-copy-primary p-4 md:w-1/2 flex flex-col justify-center bg-card">
               <ScrollAnimation animateIn="fadeIn">
                 <Glow>
                   <p className="text-xl font-semibold mb-2 glow:text-yellow-500/100">{portfolio.portfolio_name}</p>

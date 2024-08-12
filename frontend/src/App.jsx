@@ -25,7 +25,7 @@ function App() {
         <GlowCapture>
           <div className="flex flex-col min-h-screen mx-auto px-8 py-8 border border-black text-center">
             <Header toggleTheme={toggleTheme} theme={theme} />
-            <main className="flex-grow ">
+            <main className="flex-grow grid-background">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />

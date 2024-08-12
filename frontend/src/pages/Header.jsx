@@ -14,13 +14,13 @@ export default function Header({ toggleTheme, theme }) {
       <div className="flex justify-center items-center">
         <Link
           to="/"
-          className="text-copy-primary border whitespace-nowrap p-2 mr-4 hover:bg-cta-active hover:text-cta-text"
+          className="text-copy-primary border whitespace-nowrap p-2 mr-4 hover:bg-cta-active hover:text-cta-text rounded-lg"
         >
           Home
         </Link>
         <Link
           to="/portfolios"
-          className="text-copy-primary border whitespace-nowrap p-2 hover:bg-cta-active hover:text-cta-text"
+          className="text-copy-primary border whitespace-nowrap p-2 hover:bg-cta-active hover:text-cta-text rounded-lg"
         >
           Portfolios
         </Link>
