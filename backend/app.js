@@ -1,12 +1,26 @@
 const express = require("express");
 const apiRouter = require("./routes/api-router");
 const cors = require("cors");
+const rateLimit = require("express-rate-limit");
 
 const app = express();
+
+// CORS
 app.use(cors());
 
+// LIMITER
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // Limit each IP to 100 requests per `window`
+  message: "Too many requests from this IP, please try again later.",
+});
+
+app.use(limiter);
+
+// JSON
 app.use(express.json());
 
+// API ROUTES
 app.use("/api", apiRouter);
 
 ////////////////////////////////////////////
