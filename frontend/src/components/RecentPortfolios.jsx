@@ -25,11 +25,24 @@ export default function RecentPortfolios() {
           >
             <div className="md:w-1/2 overflow-hidden">
               <ScrollAnimation animateIn="bounceInRight">
-                <img
+                {/* <img
                   src="https://picsum.photos/seed/picsum/1920/1080"
                   alt="Portfolio"
                   className="w-full h-auto transition-transform duration-500 ease-in-out transform hover:scale-105"
-                />
+                /> */}
+                {/* portfolio_media_src */}
+                {portfolio.portfolio_media_src ? (
+                  <video width="100%" height="auto" autoPlay muted loop playsInline>
+                    <source src={portfolio.portfolio_media_src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <img
+                    src="https://picsum.photos/seed/picsum/1920/1080"
+                    alt="Portfolio"
+                    className="w-full h-auto transition-transform duration-500 ease-in-out transform hover:scale-105"
+                  />
+                )}
               </ScrollAnimation>
             </div>
 
