@@ -22,6 +22,8 @@ function createPortfolioTable() {
         portfolio_short_description TEXT NOT NULL,
         portfolio_start_date DATE NOT NULL,
         portfolio_project_type VARCHAR(100) NOT NULL,
+        portfolio_media_src TEXT,
+        portfolio_media_src_type VARCHAR(50),
         portfolio_youtube TEXT,
         portfolio_github TEXT,
         portfolio_demo TEXT
@@ -35,6 +37,8 @@ function insertPortfolios(portfolios) {
         portfolio_short_description, 
         portfolio_start_date, 
         portfolio_project_type, 
+        portfolio_media_src,
+        portfolio_media_src_type,
         portfolio_youtube, 
         portfolio_github, 
         portfolio_demo
@@ -44,6 +48,8 @@ function insertPortfolios(portfolios) {
       p.portfolio_short_description,
       p.portfolio_start_date,
       p.portfolio_project_type,
+      p.portfolio_media_src,
+      p.portfolio_media_src_type,
       p.portfolio_youtube,
       p.portfolio_github,
       p.portfolio_demo,
