@@ -8,6 +8,7 @@ import Footer from "./pages/Footer";
 import FallbackRoute from "./pages/FallBackRoute";
 import Home from "./pages/Home";
 import Portfolios from "./pages/Portfolios";
+import Playground from "./pages/Playground";
 
 //
 import { GlowCapture, Glow } from "@codaworks/react-glow";
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/portfolios" element={<Portfolios />} />
+                <Route path="/playground" element={<Playground />} />
                 <Route path="*" element={<FallbackRoute />} />
               </Routes>
             </main>
