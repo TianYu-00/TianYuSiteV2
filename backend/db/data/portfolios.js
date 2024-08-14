@@ -29,7 +29,7 @@ module.exports = [
     portfolio_start_date: "2024-06-17",
     portfolio_project_type: "Northcoders Project",
     portfolio_media_src:
-      "https://ucb891f73797da46420748caa663.dl.dropboxusercontent.com/cd/0/inline/CYmBzuV7Ta5_c1T3WfMUi-EIHP-8-gEpRHwiMHvMkOSpD4RgdG5ZX0-Z06ylvvSra7y3vWNGt1eFmdGyh3kifW93rJhbZKih7F-FeWjGgbO3wB3hPjOpZoMrRwlL8B_Hy5nEH56I4_ZaDQW6i5iUddoB/file#",
+      "https://uc5fb84ea1d93626713d9a00b936.dl.dropboxusercontent.com/cd/0/inline/CYr-DPFUacB_086W4GwIU3Q3kNBU_ojU2TXrO2lSH7uoJ1aPqsUf_D2Q9kDRBsFXMLE9gOHZSd0hEfcSRQKanyoUCkTsLXWqEM3j4kneDo1eQ6wHzgUtE9JiJLxCh0XSp2BSicBzl-eXlecSZWVaRvr_/file#",
     portfolio_media_src_type: "video",
     portfolio_youtube: "https://www.youtube.com/watch?v=UvF9yI6z3YE",
     portfolio_github: "https://github.com/TianYu-00/fe-nc-news",
