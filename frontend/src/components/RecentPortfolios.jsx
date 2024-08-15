@@ -25,11 +25,19 @@ export default function RecentPortfolios() {
           >
             <div className="md:w-1/2 overflow-hidden">
               <ScrollAnimation animateIn="bounceInRight">
-                <img
-                  src="https://picsum.photos/seed/picsum/1920/1080"
-                  alt="Portfolio"
-                  className="w-full h-auto transition-transform duration-500 ease-in-out transform hover:scale-105"
-                />
+                {portfolio.portfolio_media_src ? (
+                  <img
+                    src={portfolio.portfolio_media_src}
+                    alt="Portfolio"
+                    className="w-full h-auto transition-transform duration-500 ease-in-out transform hover:scale-105"
+                  />
+                ) : (
+                  <img
+                    src="https://placehold.co/854x480?text=Image+Not+Available"
+                    alt="Portfolio"
+                    className="w-full h-auto transition-transform duration-500 ease-in-out transform hover:scale-105"
+                  />
+                )}
               </ScrollAnimation>
             </div>
 
