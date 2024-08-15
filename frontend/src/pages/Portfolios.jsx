@@ -62,13 +62,10 @@ export default function Portfolios() {
                     <p className="mt-2 text-xs md:text-sm">{portfolio.portfolio_short_description}</p>
                     <div className="overflow-hidden my-2">
                       {portfolio.portfolio_media_src ? (
-                        <video width="100%" height="auto" autoPlay muted loop playsInline>
-                          <source src={portfolio.portfolio_media_src} type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
+                        <img src={portfolio.portfolio_media_src} alt="Portfolio" className="w-full h-auto" />
                       ) : (
                         <img
-                          src="https://picsum.photos/seed/picsum/1920/1080"
+                          src="https://placehold.co/854x480?text=Image+Not+Available"
                           alt="Portfolio"
                           className="w-full h-auto"
                         />
