@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { fetchPortfolios } from "../api";
 import { Glow } from "@codaworks/react-glow";
 import BackToTopButton from "../components/BackToTop";
+import PortfolioMediaSkeleton from "../components/PortfolioMediaSkeleton";
 
 export default function Portfolios() {
   const [basePortfolios, setBasePortfolios] = useState([]);
@@ -61,15 +62,10 @@ export default function Portfolios() {
 
                     <p className="mt-2 text-xs md:text-sm">{portfolio.portfolio_short_description}</p>
                     <div className="overflow-hidden my-2">
-                      {portfolio.portfolio_media_src ? (
-                        <img src={portfolio.portfolio_media_src} alt="Portfolio" className="w-full h-auto" />
-                      ) : (
-                        <img
-                          src="https://placehold.co/854x480?text=Image+Not+Available"
-                          alt="Portfolio"
-                          className="w-full h-auto"
-                        />
-                      )}
+                      <PortfolioMediaSkeleton
+                        src={portfolio.portfolio_media_src || "https://placehold.co/854x480?text=Image+Not+Available"}
+                        alt={`${portfolio.portfolio_name} portfolio media`}
+                      />
                     </div>
                     <div className="mb-2">
                       {portfolio.portfolio_demo && (
