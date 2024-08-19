@@ -8,6 +8,10 @@ import { Glow } from "@codaworks/react-glow";
 import { UserIcon } from "@heroicons/react/24/outline";
 import Education from "../components/Education";
 import BackToTopButton from "../components/BackToTop";
+import programmingImage from "../assets/undraw_programming_re_kg9v.svg";
+import gamingImage from "../assets/undraw_game_world_re_e44j.svg";
+import sportsImage from "../assets/undraw_home_run_acyh.svg";
+import travellingImage from "../assets/undraw_traveling_yhxq.svg";
 
 export default function Home() {
   return (
@@ -65,39 +69,6 @@ export default function Home() {
       </Glow>
 
       <Glow>
-        <div className="mt-24 mb-24 glow:bg-orange-500/25 h-1" />
-      </Glow>
-
-      {/* Skills */}
-      <Glow>
-        <div className="max-w-screen-xl m-auto">
-          <h2 className="text-copy-primary font-bold text-4xl m-10 glow:text-orange-500/100">SKILLS</h2>
-          <ul>
-            <ScrollAnimation animateIn="fadeIn">
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Programming Languages:</strong> C#, JavaScript, Python.
-              </li>
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Testing:</strong> TDD (Test Driven Development), Jest,
-                Supertest, Browser Developer Tools, Lighthouse (Accessibility Testing Tool).
-              </li>
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Back End:</strong> SQL, PostgreSQL, MVC
-                (Model-View-Controller), Express, MongoDB, Firebase.
-              </li>
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Front End:</strong> HTML, CSS, Vite.js, React, MUI
-                (Material-UI), Tailwind.
-              </li>
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Version Control:</strong> GitHub, Git.
-              </li>
-            </ScrollAnimation>
-          </ul>
-        </div>
-      </Glow>
-
-      <Glow>
         <div className="mt-24 mb-24 glow:bg-yellow-500/25 h-1" />
       </Glow>
 
@@ -136,30 +107,34 @@ export default function Home() {
       <Glow>
         <div className="max-w-screen-xl m-auto">
           <h2 className="text-copy-primary font-bold text-4xl m-10 glow:text-blue-500/100">HOBBIES</h2>
-          <ul>
-            <ScrollAnimation animateIn="fadeIn">
-              <li className="text-copy-primary/75">
+          <ScrollAnimation animateIn="fadeIn">
+            <div>
+              <div className="text-copy-primary/75">
                 <strong className="text-copy-primary glow:text-blue-500/100">Programming</strong>: I love turning ideas
                 into reality by developing applications, websites, and games in my spare time. It’s both a creative
                 outlet and a constant learning journey.
-              </li>
-              <li className="text-copy-primary/75">
+                <img src={programmingImage} className="h-46" alt="Programming Image"></img>
+              </div>
+              <div className="text-copy-primary/75">
                 <strong className="text-copy-primary glow:text-blue-500/100">Gaming</strong>: I’m an avid gamer,
                 particularly fond of puzzle games and roguelikes. They challenge my problem-solving skills and provide
                 endless fun.
-              </li>
-              <li className="text-copy-primary/75">
+                <img src={gamingImage} className="h-46" alt="Programming Image"></img>
+              </div>
+              <div className="text-copy-primary/75">
                 <strong className="text-copy-primary glow:text-blue-500/100">Sports</strong>: Whether it’s badminton,
                 swimming, basketball, rock climbing, or ping pong, I enjoy staying active and spending quality time with
                 friends and family through sports.
-              </li>
-              <li className="text-copy-primary/75">
+                <img src={sportsImage} className="h-46" alt="Programming Image"></img>
+              </div>
+              <div className="text-copy-primary/75">
                 <strong className="text-copy-primary glow:text-blue-500/100">Travelling</strong>: Exploring new
                 destinations and immersing myself in different cultures is a passion of mine. I especially enjoy tasting
                 local cuisines and learning about their culinary traditions.
-              </li>
-            </ScrollAnimation>
-          </ul>
+                <img src={travellingImage} className="h-46" alt="Programming Image"></img>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </Glow>
     </>
