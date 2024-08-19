@@ -8,6 +8,11 @@ import { Glow } from "@codaworks/react-glow";
 import { UserIcon } from "@heroicons/react/24/outline";
 import Education from "../components/Education";
 import BackToTopButton from "../components/BackToTop";
+import programmingImage from "../assets/undraw_programming_re_kg9v.svg";
+import gamingImage from "../assets/undraw_game_world_re_e44j.svg";
+import sportsImage from "../assets/undraw_home_run_acyh.svg";
+import travellingImage from "../assets/undraw_traveling_yhxq.svg";
+import InterestAndHobbies from "../components/InterestAndHobbiesSection";
 
 export default function Home() {
   return (
@@ -24,14 +29,22 @@ export default function Home() {
         </ScrollAnimation>
 
         <div className="flex flex-row gap-4">
-          <IconBrandGithub
-            stroke={1.5}
-            size={62}
-            color="black"
-            className="bg-cta/75 rounded-full p-1 hover:bg-cta-active"
-          />
-          <IconBrandLinkedin stroke={1.5} size={62} className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
-          <IconMail stroke={1.5} size={62} color="black" className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
+          <a href="https://github.com/Tianyu-00" target="_blank" rel="noopener noreferrer">
+            <IconBrandGithub
+              stroke={1.5}
+              size={62}
+              color="black"
+              className="bg-cta/75 rounded-full p-1 hover:bg-cta-active"
+            />
+          </a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <IconBrandLinkedin stroke={1.5} size={62} className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
+          </a>
+
+          <a href="mailto:#">
+            <IconMail stroke={1.5} size={62} color="black" className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
+          </a>
         </div>
       </div>
 
@@ -65,39 +78,6 @@ export default function Home() {
       </Glow>
 
       <Glow>
-        <div className="mt-24 mb-24 glow:bg-orange-500/25 h-1" />
-      </Glow>
-
-      {/* Skills */}
-      <Glow>
-        <div className="max-w-screen-xl m-auto">
-          <h2 className="text-copy-primary font-bold text-4xl m-10 glow:text-orange-500/100">SKILLS</h2>
-          <ul>
-            <ScrollAnimation animateIn="fadeIn">
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Programming Languages:</strong> C#, JavaScript, Python.
-              </li>
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Testing:</strong> TDD (Test Driven Development), Jest,
-                Supertest, Browser Developer Tools, Lighthouse (Accessibility Testing Tool).
-              </li>
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Back End:</strong> SQL, PostgreSQL, MVC
-                (Model-View-Controller), Express, MongoDB, Firebase.
-              </li>
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Front End:</strong> HTML, CSS, Vite.js, React, MUI
-                (Material-UI), Tailwind.
-              </li>
-              <li className="text-copy-primary">
-                <strong className="glow:text-orange-500/100">Version Control:</strong> GitHub, Git.
-              </li>
-            </ScrollAnimation>
-          </ul>
-        </div>
-      </Glow>
-
-      <Glow>
         <div className="mt-24 mb-24 glow:bg-yellow-500/25 h-1" />
       </Glow>
 
@@ -109,9 +89,26 @@ export default function Home() {
 
         <RecentPortfolios></RecentPortfolios>
         <div className="m-20"></div>
-        <Link to="/portfolios" className="text-copy-primary border p-2 rounded-2xl hover:bg-cta/80 hover:text-cta-text">
-          Browse More
-        </Link>
+        <a
+          href="/portfolios"
+          className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-cta rounded-full shadow-md group"
+        >
+          <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-cta group-hover:translate-x-0 ease">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </span>
+          <span className="absolute flex items-center justify-center w-full h-full text-cta transition-all duration-300 transform group-hover:translate-x-full ease">
+            Browse More
+          </span>
+          <span className="relative invisible">Button Text</span>
+        </a>
       </div>
 
       <Glow>
@@ -134,32 +131,9 @@ export default function Home() {
 
       {/* Interest and Hobbies */}
       <Glow>
-        <div className="max-w-screen-xl m-auto">
+        <div className="m-auto">
           <h2 className="text-copy-primary font-bold text-4xl m-10 glow:text-blue-500/100">HOBBIES</h2>
-          <ul>
-            <ScrollAnimation animateIn="fadeIn">
-              <li className="text-copy-primary/75">
-                <strong className="text-copy-primary glow:text-blue-500/100">Programming</strong>: I love turning ideas
-                into reality by developing applications, websites, and games in my spare time. It’s both a creative
-                outlet and a constant learning journey.
-              </li>
-              <li className="text-copy-primary/75">
-                <strong className="text-copy-primary glow:text-blue-500/100">Gaming</strong>: I’m an avid gamer,
-                particularly fond of puzzle games and roguelikes. They challenge my problem-solving skills and provide
-                endless fun.
-              </li>
-              <li className="text-copy-primary/75">
-                <strong className="text-copy-primary glow:text-blue-500/100">Sports</strong>: Whether it’s badminton,
-                swimming, basketball, rock climbing, or ping pong, I enjoy staying active and spending quality time with
-                friends and family through sports.
-              </li>
-              <li className="text-copy-primary/75">
-                <strong className="text-copy-primary glow:text-blue-500/100">Travelling</strong>: Exploring new
-                destinations and immersing myself in different cultures is a passion of mine. I especially enjoy tasting
-                local cuisines and learning about their culinary traditions.
-              </li>
-            </ScrollAnimation>
-          </ul>
+          <InterestAndHobbies />
         </div>
       </Glow>
     </>
