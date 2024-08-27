@@ -6,7 +6,8 @@ Docker contained self hosted express.js server.
 
 
 ## Frotnend
-Using React with vite for faster load time and optimisation
+Using React with vite for faster load time and optimisation.
+Tailwind for faster component styling.
 
 
 
