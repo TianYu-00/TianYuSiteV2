@@ -5,9 +5,17 @@ Docker contained self hosted PSQL server.
 Docker contained self hosted express.js server.
 
 
-## Frotnend
+## Frontend
 Using React with vite for faster load time and optimisation.
 Tailwind for faster component styling.
+
+```
+cd frontend
+```
+
+```
+npm run dev
+```
 
 
 
