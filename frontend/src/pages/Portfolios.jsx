@@ -69,17 +69,17 @@ export default function Portfolios() {
                     </div>
                     <div className="mb-2">
                       {portfolio.portfolio_demo && (
-                        <a href={`${portfolio.portfolio_demo}`} className="underline underline-offset-4 mr-4">
+                        <a href={`${portfolio.portfolio_demo}`} className="hover:underline  underline-offset-4 mr-4">
                           Demo
                         </a>
                       )}
                       {portfolio.portfolio_github && (
-                        <a href={`${portfolio.portfolio_github}`} className="underline underline-offset-4 mr-4">
+                        <a href={`${portfolio.portfolio_github}`} className="hover:underline underline-offset-4 mr-4">
                           Github
                         </a>
                       )}
                       {portfolio.portfolio_youtube && (
-                        <a href={`${portfolio.portfolio_youtube}`} className="underline underline-offset-4 mr-4">
+                        <a href={`${portfolio.portfolio_youtube}`} className="hover:underline  underline-offset-4 mr-4">
                           YouTube
                         </a>
                       )}

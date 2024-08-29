@@ -8,10 +8,6 @@ import { Glow } from "@codaworks/react-glow";
 import { UserIcon } from "@heroicons/react/24/outline";
 import Education from "../components/Education";
 import BackToTopButton from "../components/BackToTop";
-import programmingImage from "../assets/undraw_programming_re_kg9v.svg";
-import gamingImage from "../assets/undraw_game_world_re_e44j.svg";
-import sportsImage from "../assets/undraw_home_run_acyh.svg";
-import travellingImage from "../assets/undraw_traveling_yhxq.svg";
 import InterestAndHobbies from "../components/InterestAndHobbiesSection";
 
 export default function Home() {
@@ -38,13 +34,13 @@ export default function Home() {
             />
           </a>
 
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/ziliangwu/" target="_blank" rel="noopener noreferrer">
             <IconBrandLinkedin stroke={1.5} size={62} className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
           </a>
 
-          <a href="mailto:#">
+          {/* <a href="mailto:#">
             <IconMail stroke={1.5} size={62} color="black" className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
-          </a>
+          </a> */}
         </div>
       </div>
 
@@ -64,12 +60,15 @@ export default function Home() {
             <div className="flex justify-center items-center p-4 md:w-1/2">
               <ScrollAnimation animateIn="fadeIn">
                 <p className="text-copy-primary text-center md:text-left">
-                  From a young age, game development and software development have always been my dream career paths and
-                  I knew it was something that I wanted to do in the future. Through my academic background in game
-                  development, I have developed strong skills in problem-solving, teamwork, and quick adaptation to new
-                  technologies, tools, and various programming languages. I'm looking forward to transitioning to
-                  software development as a junior software developer, applying all my previous knowledge in programming
-                  to this industry to create impactful solutions with innovation.
+                  Programming has always been my passion, and I find great fulfillment in solving problems through code.
+                  With a strong foundation in both game and software development, I excel at adapting to new
+                  technologies, working collaboratively, and delivering high-quality solutions. My experience across
+                  various projects has sharpened my ability to quickly learn and innovate.
+                </p>
+                <br></br>
+                <p className="text-copy-primary text-center md:text-left">
+                  I am excited to bring my skills and passion for programming to a dynamic team, where I can contribute
+                  to building impactful and scalable solutions in the software development industry.
                 </p>
               </ScrollAnimation>
             </div>
