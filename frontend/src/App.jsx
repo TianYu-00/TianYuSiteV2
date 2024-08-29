@@ -14,7 +14,11 @@ import Playground from "./pages/Playground";
 import { GlowCapture, Glow } from "@codaworks/react-glow";
 
 function App() {
-  const [theme, setTheme] = useState("dark"); // Default theme
+  const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));

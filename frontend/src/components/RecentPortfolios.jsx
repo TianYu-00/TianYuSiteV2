@@ -52,7 +52,7 @@ export default function RecentPortfolios() {
                   {portfolio.portfolio_demo && (
                     <a
                       href={`${portfolio.portfolio_demo}`}
-                      className="underline underline-offset-4 hover:underline mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
+                      className="hover:underline  underline-offset-4 mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
                     >
                       Demo
                     </a>
@@ -60,7 +60,7 @@ export default function RecentPortfolios() {
                   {portfolio.portfolio_github && (
                     <a
                       href={`${portfolio.portfolio_github}`}
-                      className="underline underline-offset-4 hover:underline mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
+                      className="hover:underline  underline-offset-4  mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
                     >
                       Github
                     </a>
@@ -68,7 +68,7 @@ export default function RecentPortfolios() {
                   {portfolio.portfolio_youtube && (
                     <a
                       href={`${portfolio.portfolio_youtube}`}
-                      className="underline underline-offset-4 hover:underline mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
+                      className="hover:underline  underline-offset-4 mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
                     >
                       YouTube
                     </a>
