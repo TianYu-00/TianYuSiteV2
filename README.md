@@ -1,4 +1,6 @@
 # TianYuSiteV2
+
+A new website to store my portfolios and basic information about me. 
  
 ## Backend
 Docker contained self hosted PSQL server.
