@@ -1,5 +1,5 @@
 <div align="center">
-<h1> TianYuSiteV2 </h1> 
+<h1> Tian's website v2 </h1> 
 A new website designed to showcase my portfolio and offer detailed information about my background, skills, and professional achievements.  <br><br>
   
 [![madewithlove](https://img.shields.io/badge/made_with-❤-red?style=for-the-badge&labelColor=orange
