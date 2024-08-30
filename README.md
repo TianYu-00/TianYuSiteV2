@@ -1,8 +1,13 @@
-# TianYuSiteV2
-A new website to store my portfolios and basic information about me. 
+<div align="center">
+<h1> TianYuSiteV2 </h1> 
+A new website designed to showcase my portfolio and offer detailed information about my background, skills, and professional achievements.  <br><br>
+  
+[![madewithlove](https://img.shields.io/badge/made_with-❤-red?style=for-the-badge&labelColor=orange
+)](https://github.com/Tianyu-00)
 
 [Backend](https://github.com/TianYu-00/TianYuSiteV2?tab=readme-ov-file#backend) | [Frontend](https://github.com/TianYu-00/TianYuSiteV2?tab=readme-ov-file#frontend)
- 
+</div>
+
 ## Backend
 I’ve built my backend using Node.js, with Express.js to handle the API routing and middleware. My database is PostgreSQL, which I’ve hosted on a Docker container within my Debian server.
 
