@@ -94,10 +94,12 @@ export default function Portfolios() {
 
                   {/* Marker */}
                   <div
-                    className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-green-300 glow:bg-green-500/100 rounded-full border-2 md:border-4 border-white ${
+                    className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 w-6 h-6 bg-card rounded-full ${
                       index % 2 === 0 ? "-right-2 md:-right-3" : "-left-2 md:-left-3"
-                    }`}
-                  ></div>
+                    } text-copy-secondary text-center`}
+                  >
+                    {index}
+                  </div>
                 </div>
               </div>
             );
