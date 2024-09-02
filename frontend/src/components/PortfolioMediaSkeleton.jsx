@@ -1,11 +1,25 @@
 import React, { useState } from "react";
 
-export default function PortfolioMediaSkeleton({ src, alt }) {
+export default function PortfolioMediaSkeleton({ src, alt, fallback }) {
   const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
+
+  const handleLoad = () => {
+    setIsLoading(false);
+  };
+
+  const handleError = () => {
+    if (!hasError) {
+      setHasError(true);
+      setIsLoading(false);
+    }
+  };
+
   return (
-    <>
+    <div className="relative w-full h-auto">
+      {/* Skeleton Loader */}
       {isLoading && (
-        <div className="animate-pulse w-full h-auto bg-gray-300 flex justify-center items-center">
+        <div className="absolute inset-0 animate-pulse bg-gray-300 flex justify-center items-center">
           <svg
             className="w-10 h-48 md:h-72"
             aria-hidden="true"
@@ -17,13 +31,15 @@ export default function PortfolioMediaSkeleton({ src, alt }) {
           </svg>
         </div>
       )}
+
+      {/* Image */}
       <img
-        src={src}
+        src={hasError ? fallback : src}
         alt={alt}
-        className={`${isLoading ? "opacity-0" : "opacity-100"}`}
-        onLoad={() => setIsLoading(false)}
-        onError={() => setIsLoading(false)}
+        className={`w-full h-auto transition-opacity duration-300 ${isLoading ? "opacity-0" : "opacity-100"}`}
+        onLoad={handleLoad}
+        onError={handleError}
       />
-    </>
+    </div>
   );
 }

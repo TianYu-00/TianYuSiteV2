@@ -3,6 +3,7 @@ import { fetchPortfolios } from "../api";
 import { Glow } from "@codaworks/react-glow";
 import BackToTopButton from "../components/BackToTop";
 import PortfolioMediaSkeleton from "../components/PortfolioMediaSkeleton";
+import imageNotAvailable from "../assets/image_not_ava.svg";
 
 export default function Portfolios() {
   const [basePortfolios, setBasePortfolios] = useState([]);
@@ -62,9 +63,11 @@ export default function Portfolios() {
 
                     <p className="mt-2 text-xs md:text-sm">{portfolio.portfolio_short_description}</p>
                     <div className="overflow-hidden my-2">
+                      {/* "https://placehold.co/854x480?text=Image+Not+Available" */}
                       <PortfolioMediaSkeleton
-                        src={portfolio.portfolio_media_src || "https://placehold.co/854x480?text=Image+Not+Available"}
+                        src={portfolio.portfolio_media_src}
                         alt={`${portfolio.portfolio_name} portfolio media`}
+                        fallback={imageNotAvailable}
                       />
                     </div>
                     <div className="mb-2">

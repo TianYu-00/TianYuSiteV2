@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { fetchPortfolios } from "../api";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Glow } from "@codaworks/react-glow";
+import PortfolioMediaSkeleton from "../components/PortfolioMediaSkeleton";
+import imageNotAvailable from "../assets/image_not_ava.svg";
 
 //#B8D060
 // className="text-copy-primary"
@@ -25,7 +27,7 @@ export default function RecentPortfolios() {
           >
             <div className="md:w-1/2 overflow-hidden">
               <ScrollAnimation animateIn="bounceInRight">
-                {portfolio.portfolio_media_src ? (
+                {/* {portfolio.portfolio_media_src ? (
                   <img
                     src={portfolio.portfolio_media_src}
                     alt="Portfolio"
@@ -37,7 +39,12 @@ export default function RecentPortfolios() {
                     alt="Portfolio"
                     className="w-full h-auto transition-transform duration-500 ease-in-out transform hover:scale-105"
                   />
-                )}
+                )} */}
+                <PortfolioMediaSkeleton
+                  src={portfolio.portfolio_media_src}
+                  alt="Portfolio"
+                  fallback={imageNotAvailable}
+                />
               </ScrollAnimation>
             </div>
 
@@ -52,7 +59,7 @@ export default function RecentPortfolios() {
                   {portfolio.portfolio_demo && (
                     <a
                       href={`${portfolio.portfolio_demo}`}
-                      className="hover:underline  underline-offset-4 mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
+                      className="hover:underline  underline-offset-4 mr-4 transition duration-500 ease-in-out hover:bg-cta hover:text-cta-text p-2"
                     >
                       Demo
                     </a>
@@ -60,7 +67,7 @@ export default function RecentPortfolios() {
                   {portfolio.portfolio_github && (
                     <a
                       href={`${portfolio.portfolio_github}`}
-                      className="hover:underline  underline-offset-4  mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
+                      className="hover:underline  underline-offset-4  mr-4 transition duration-500 ease-in-out hover:bg-cta hover:text-cta-text p-2"
                     >
                       Github
                     </a>
@@ -68,7 +75,7 @@ export default function RecentPortfolios() {
                   {portfolio.portfolio_youtube && (
                     <a
                       href={`${portfolio.portfolio_youtube}`}
-                      className="hover:underline  underline-offset-4 mr-4 transition duration-500 ease-in-out hover:bg-black hover:text-white p-2"
+                      className="hover:underline underline-offset-4 mr-4 transition duration-500 ease-in-out hover:bg-cta hover:text-cta-text p-2"
                     >
                       YouTube
                     </a>

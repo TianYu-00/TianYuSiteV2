@@ -9,6 +9,7 @@ import { UserIcon } from "@heroicons/react/24/outline";
 import Education from "../components/Education";
 import BackToTopButton from "../components/BackToTop";
 import InterestAndHobbies from "../components/InterestAndHobbiesSection";
+import BouncyArrow from "../components/BouncyArrow";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
             <IconMail stroke={1.5} size={62} color="black" className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
           </a> */}
         </div>
+        <BouncyArrow></BouncyArrow>
       </div>
 
       <Glow>
