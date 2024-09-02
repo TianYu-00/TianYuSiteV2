@@ -3,6 +3,7 @@ import { fetchPortfolios } from "../api";
 import { Glow } from "@codaworks/react-glow";
 import BackToTopButton from "../components/BackToTop";
 import PortfolioMediaSkeleton from "../components/PortfolioMediaSkeleton";
+import imageNotAvailable from "../assets/image_not_ava.svg";
 
 export default function Portfolios() {
   const [basePortfolios, setBasePortfolios] = useState([]);
@@ -62,9 +63,11 @@ export default function Portfolios() {
 
                     <p className="mt-2 text-xs md:text-sm">{portfolio.portfolio_short_description}</p>
                     <div className="overflow-hidden my-2">
+                      {/* "https://placehold.co/854x480?text=Image+Not+Available" */}
                       <PortfolioMediaSkeleton
-                        src={portfolio.portfolio_media_src || "https://placehold.co/854x480?text=Image+Not+Available"}
+                        src={portfolio.portfolio_media_src}
                         alt={`${portfolio.portfolio_name} portfolio media`}
+                        fallback={imageNotAvailable}
                       />
                     </div>
                     <div className="mb-2">
@@ -91,10 +94,12 @@ export default function Portfolios() {
 
                   {/* Marker */}
                   <div
-                    className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-green-300 glow:bg-green-500/100 rounded-full border-2 md:border-4 border-white ${
+                    className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 w-6 h-6 bg-card rounded-full ${
                       index % 2 === 0 ? "-right-2 md:-right-3" : "-left-2 md:-left-3"
-                    }`}
-                  ></div>
+                    } text-copy-secondary text-center`}
+                  >
+                    {index}
+                  </div>
                 </div>
               </div>
             );

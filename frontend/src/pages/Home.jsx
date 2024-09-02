@@ -9,6 +9,7 @@ import { UserIcon } from "@heroicons/react/24/outline";
 import Education from "../components/Education";
 import BackToTopButton from "../components/BackToTop";
 import InterestAndHobbies from "../components/InterestAndHobbiesSection";
+import BouncyArrow from "../components/BouncyArrow";
 
 export default function Home() {
   return (
@@ -28,20 +29,22 @@ export default function Home() {
           <a href="https://github.com/Tianyu-00" target="_blank" rel="noopener noreferrer">
             <IconBrandGithub
               stroke={1.5}
-              size={62}
-              color="black"
-              className="bg-cta/75 rounded-full p-1 hover:bg-cta-active"
+              className="size-12 md:size-16 rounded-full p-1 text-copy-primary hover:bg-cta-active hover:text-cta-text"
             />
           </a>
 
           <a href="https://www.linkedin.com/in/ziliangwu/" target="_blank" rel="noopener noreferrer">
-            <IconBrandLinkedin stroke={1.5} size={62} className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
+            <IconBrandLinkedin
+              stroke={1.5}
+              className="size-12 md:size-16 rounded-full p-1 text-copy-primary hover:bg-cta-active hover:text-cta-text"
+            />
           </a>
 
           {/* <a href="mailto:#">
             <IconMail stroke={1.5} size={62} color="black" className="bg-cta/75 rounded-full p-1 hover:bg-cta-active" />
           </a> */}
         </div>
+        <BouncyArrow></BouncyArrow>
       </div>
 
       <Glow>
