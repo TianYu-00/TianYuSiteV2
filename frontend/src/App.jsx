@@ -34,7 +34,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
-                <Route path="/portfolios" element={<Portfolios />} />
+                <Route path="/portfolio" element={<Portfolios />} />
                 <Route path="/playground" element={<Playground />} />
                 <Route path="*" element={<FallbackRoute />} />
               </Routes>

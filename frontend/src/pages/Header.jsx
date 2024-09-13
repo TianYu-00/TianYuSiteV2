@@ -17,7 +17,7 @@ export default function Header({ toggleTheme, theme }) {
         <Link to="/" className="text-copy-primary hover:border-b-2 whitespace-nowrap p-2 ">
           Home
         </Link>
-        <Link to="/portfolios" className="text-copy-primary hover:border-b-2 whitespace-nowrap p-2">
+        <Link to="/portfolio" className="text-copy-primary hover:border-b-2 whitespace-nowrap p-2">
           Portfolios
         </Link>
 
