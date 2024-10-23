@@ -92,7 +92,7 @@ export default function Home() {
         <RecentPortfolios></RecentPortfolios>
         <div className="m-20"></div>
         <a
-          href="/portfolios"
+          href="/portfolio"
           className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-cta rounded-full shadow-md group"
         >
           <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-cta group-hover:translate-x-0 ease">
