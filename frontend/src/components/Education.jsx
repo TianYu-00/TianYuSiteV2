@@ -7,20 +7,21 @@ export default function Education() {
       title: "Northcoders",
       description: "Full-Stack Software Development",
       courses:
-        "Course Subjects: JavaScript fundamentals (Testing, Value vs Reference, Scope, Array Methods, Destructuring, Testing Higher Order Functions, Closure, Recursion, OOP, Async, Promises, Internet and Data Fetching). \n\nBackend (SQL, MVC, Seeding, Testing, Error Handling, Routers, Middleware, Development and Test Databases, Complex Queries, API Hosting, Express, CI/CD). \n\nFrontend (DOM, React, Data Fetching, Error Handling, Custom Hooks, Sorting and Pagination, Class Components, Hosting, MUI).",
+        "Course Subjects: JavaScript fundamentals (Testing, Value vs Reference, Scope, Array Methods, Destructing, Testing Higher Order Functions, Closure, Recursion, OOP, Async, Promises, Internet and Data Fetching), backend (SQL, MVC, Seeding, Testing, Error Handling, Routers, Middleware, Development and Test Databases, Complex Queries, API Hosting, Express, CI/CD), frontend (DOM, React, Data Fetching, Error Handling, Custom Hooks, Sorting and Pagination, Class Components, Hosting, MUI), hands-on team project.",
     },
     {
       date: "September 2019 – May 2022",
       title: "Manchester Metropolitan University",
       description: "Computer Games Technology – Upper Second Class Honours (2.1)",
       courses:
-        "Course Subjects: Coding, JavaScript, Networks, Networks and Security, Product Design, Project, User Experience Design, Video Games Development, Web Applications, Web Development.",
+        "Course Subjects: Computer games fundamentals, Computer systems fundamentals, Introduction to web design and development, Programming, Algorithms and data structures, Computer games design, Computer graphics, Professional development, Advanced computer games design, Advanced computer graphics, Advanced computer development.",
     },
     {
       date: "September 2017 – August 2019",
       title: "Loreto Sixth Form College",
       description: "IT (Business) - Distinction Star, Distinction Star, Distinction",
-      courses: "Course Subjects: Spreadsheets, social media and business, Databases, IT systems.",
+      courses:
+        "Course Subjects: Communication and employability skills for IT, Computer systems, Information systems, Impact of the use of IT on business systems, Organisational systems security, E-Commerce, Software design and development, Communication technologies, System analysis and design, Event driven programming, Project planning with IT, Database design, Client-side customisation of web pages, Human computer interaction, Web server scripting, Website production, Installing and upgrading software, Digital graphics and Business resources.",
     },
   ];
 
