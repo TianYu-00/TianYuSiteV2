@@ -1,4 +1,42 @@
+// npm run seed-prod
+/*
+  {
+    portfolio_name: "",
+    portfolio_short_description: "",
+    portfolio_start_date: "",
+    portfolio_project_type: "",
+    portfolio_media_src: "",
+    portfolio_media_src_type: "",
+    portfolio_youtube: "",
+    portfolio_github: "",
+    portfolio_demo: "",
+  },
+*/
+
 module.exports = [
+  {
+    portfolio_name: "Live 1-2-1 (Web Real Time Communication)",
+    portfolio_short_description: "A real-time communication platform with video, audio, and screen sharing.",
+    portfolio_start_date: "2024-09-06",
+    portfolio_project_type: "Personal Project",
+    portfolio_media_src: "https://imgur.com/4qbJwYh.gif",
+    portfolio_media_src_type: "gif",
+    portfolio_youtube: "",
+    portfolio_github: "https://github.com/TianYu-00/webrtc-with-react",
+    portfolio_demo: "",
+  },
+  {
+    portfolio_name: "Full-Stack Portfolio Website",
+    portfolio_short_description:
+      "A new website designed to showcase my portfolio and offer detailed information about my background, skills, and professional achievements.",
+    portfolio_start_date: "2024-07-16",
+    portfolio_project_type: "Personal Project",
+    portfolio_media_src: "https://imgur.com/1usNQN0.gif",
+    portfolio_media_src_type: "png",
+    portfolio_youtube: "",
+    portfolio_github: "https://github.com/TianYu-00/TianYuSiteV2",
+    portfolio_demo: "https://tianyu00.com/",
+  },
   {
     portfolio_name: "Whimsy Date",
     portfolio_short_description:
