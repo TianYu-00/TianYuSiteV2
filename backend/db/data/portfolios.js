@@ -16,7 +16,8 @@
 module.exports = [
   {
     portfolio_name: "Live 1-2-1 (Web Real Time Communication)",
-    portfolio_short_description: "A real-time communication platform with video, audio, and screen sharing.",
+    portfolio_short_description:
+      "A real-time communication platform offering video, audio, and screen-sharing features. Users can create or join rooms, each with a unique, automatically generated room ID. Additionally, users can switch between different input and output media sources.",
     portfolio_start_date: "2024-09-06",
     portfolio_project_type: "Personal Project",
     portfolio_media_src: "https://imgur.com/4qbJwYh.gif",
