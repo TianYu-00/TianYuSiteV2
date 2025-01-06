@@ -15,6 +15,18 @@
 
 module.exports = [
   {
+    portfolio_name: "DropBoxer",
+    portfolio_short_description:
+      "Dropboxer is a secure file-sharing app where users can upload, manage, and share files easily. It features drag-and-drop uploads, file organization tools, and secure sharing with password protection, download limit and expiration options, all backed by robust authentication and privacy.",
+    portfolio_start_date: "2024-10-28",
+    portfolio_project_type: "Personal Project",
+    portfolio_media_src: "",
+    portfolio_media_src_type: "",
+    portfolio_youtube: "",
+    portfolio_github: "https://github.com/TianYu-00/filesharing_site",
+    portfolio_demo: "",
+  },
+  {
     portfolio_name: "Live 1-2-1 (Web Real Time Communication)",
     portfolio_short_description:
       "A real-time communication platform offering video, audio, and screen-sharing features. Users can create or join rooms, each with a unique, automatically generated room ID. Additionally, users can switch between different input and output media sources.",
