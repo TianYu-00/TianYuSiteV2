@@ -15,6 +15,18 @@
 
 module.exports = [
   {
+    portfolio_name: "SE - Events Platform",
+    portfolio_short_description:
+      "A web platform enabling community members to browse, sign up for, purchase, and add events to their personal calendars, as well as share events on social media. Staff members have additional capabilities to create and manage events.",
+    portfolio_start_date: "2025-01-06",
+    portfolio_project_type: "Freelance",
+    portfolio_media_src: "https://imgur.com/Sx78MBV.gif",
+    portfolio_media_src_type: "gif",
+    portfolio_youtube: "https://www.youtube.com/watch?v=wJTZPR6swyg",
+    portfolio_github: "https://github.com/TianYu-00/SE-Events-Platform",
+    portfolio_demo: "https://se-events-platform-tianyu.vercel.app/",
+  },
+  {
     portfolio_name: "DropBoxer",
     portfolio_short_description:
       "Dropboxer is a secure file-sharing app where users can upload, manage, and share files easily. It features drag-and-drop uploads, file organization tools, and secure sharing with password protection, download limit and expiration options, all backed by robust authentication and privacy.",
