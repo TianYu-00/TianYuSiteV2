@@ -8,13 +8,15 @@
     "startDev": "nodemon listen.js",
     "setup-db": "psql -f ./db/portfolio.sql",
     "seed": "node db/run-seed.js",
-    "seed-prod": "NODE_ENV=production npm run seed"
+    "seed-prod": "NODE_ENV=production npm run seed",
+    "seed-prod2": "cross-env NODE_ENV=production npm run seed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "jest": "^29.7.0",
     "jest-sorted": "^1.0.15",
     "nodemon": "^3.1.4",
