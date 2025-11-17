@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - production
+      - convert-production-ghcr
 
 jobs:
   build-and-push:
@@ -12,7 +13,7 @@ jobs:
     env:
       GHCR_USERNAME: ${{ github.actor }}
       GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
-      NODE_ENV: production
+      NODE_ENV: ${{ secrets.NODE_ENV }}
       PGDATABASE: ${{ secrets.PGDATABASE }}
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
