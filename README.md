@@ -7,6 +7,9 @@ A new website designed to showcase my portfolio and offer detailed information a
 
 [Backend](https://github.com/TianYu-00/TianYuSiteV2?tab=readme-ov-file#backend) | [Frontend](https://github.com/TianYu-00/TianYuSiteV2?tab=readme-ov-file#frontend)
 
+[![Docker GHCR Build & Push](https://github.com/TianYu-00/TianYuSiteV2/actions/workflows/docker-ghcr.yml/badge.svg?branch=production)](https://github.com/TianYu-00/TianYuSiteV2/actions/workflows/docker-ghcr.yml)
+
+
 ![Website Image Demo](https://github.com/user-attachments/assets/472d6a77-4f12-4129-827f-1740a922f00b)
 
 </div>
