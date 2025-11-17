@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - production
-      - convert-production-ghcr
 
 jobs:
   build-and-push:
