@@ -37,7 +37,7 @@ jobs:
           context: ./backend
           file: ./backend/Dockerfile
           push: true
-          tags: ghcr.io/TianYu-00/tianyu-website-backend:latest
+          tags: ghcr.io/tianyu-00/tianyu-website-backend:latest
 
       # Build and push frontend
       - name: Build & Push Frontend Image
@@ -46,4 +46,4 @@ jobs:
           context: ./frontend
           file: ./frontend/Dockerfile
           push: true
-          tags: ghcr.io/TianYu-00/tianyu-website-frontend:latest
+          tags: ghcr.io/tianyu-00/tianyu-website-frontend:latest

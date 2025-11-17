@@ -3,7 +3,7 @@ version: "3.9"
 services:
   backend:
     container_name: tianyu-website-backend
-    image: ghcr.io/TianYu-00/tianyu-website-backend:latest
+    image: ghcr.io/tianyu-00/tianyu-website-backend:latest
     ports:
       - "34443:9090"
     restart: unless-stopped
@@ -17,7 +17,7 @@ services:
 
   frontend:
     container_name: tianyu-website-frontend
-    image: ghcr.io/TianYu-00/tianyu-website-frontend:latest
+    image: ghcr.io/tianyu-00/tianyu-website-frontend:latest
     ports:
       - "34442:80"
     restart: unless-stopped
