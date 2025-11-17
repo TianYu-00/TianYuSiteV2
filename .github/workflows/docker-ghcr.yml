@@ -38,6 +38,7 @@ jobs:
           file: ./backend/Dockerfile
           push: true
           tags: ghcr.io/tianyu-00/tianyu-website-backend:latest
+          platforms: linux/amd64,linux/arm/v7,linux/arm64
 
       # Build and push frontend
       - name: Build & Push Frontend Image
@@ -47,3 +48,4 @@ jobs:
           file: ./frontend/Dockerfile
           push: true
           tags: ghcr.io/tianyu-00/tianyu-website-frontend:latest
+          platforms: linux/amd64,linux/arm/v7,linux/arm64
