@@ -95,3 +95,54 @@ cd frontend
 ```
 npm run dev
 ```
+
+## Docker
+
+Docker Compose
+
+```yml
+version: "3.9"
+
+services:
+  # Backend
+  backend:
+    container_name: tianyu-website-backend
+    image: ghcr.io/tianyu-00/tianyu-website-backend:latest
+    ports:
+      - "34443:9090"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PGDATABASE=xxx
+      - DATABASE_URL=xxx
+    networks:
+      - tianyu-website-network
+
+  # Frontend
+  frontend:
+    container_name: tianyu-website-frontend
+    image: ghcr.io/tianyu-00/tianyu-website-frontend:latest
+    ports:
+      - "34442:80"
+    restart: unless-stopped
+    networks:
+      - tianyu-website-network
+
+  # Updater
+  watchtower:
+    image: containrrr/watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_POLL_INTERVAL=30
+      - GHCR_USERNAME=xxx
+      - GHCR_TOKEN=xxx
+    networks:
+      - tianyu-website-network
+
+networks:
+  tianyu-website-network:
+    driver: bridge
+```
