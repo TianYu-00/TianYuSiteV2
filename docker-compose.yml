@@ -8,9 +8,10 @@ services:
       - "34443:9090"
     restart: unless-stopped
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=${NODE_ENV}
       - PGDATABASE=${PGDATABASE}
       - DATABASE_URL=${DATABASE_URL}
+      - PORT=9090
     networks:
       - tianyu-website-network
 
