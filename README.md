@@ -52,12 +52,31 @@ I’ve built my backend using Node.js, with Express.js to handle the API routing
 
 ```
 cd backend
-```
-
-```
+npm install
 npm run setup-db
 npm run seed
 npm start
+```
+
+.env.development
+
+```
+PGDATABASE=x
+DATABASE_URL=x
+```
+
+.env.test
+
+```
+PGDATABASE=x
+DATABASE_URL=x
+```
+
+.env.production
+
+```
+PGDATABASE=x
+DATABASE_URL=x
 ```
 
 ## Frontend
@@ -90,15 +109,31 @@ For the frontend, I’ve used **React** and **Vite.js** to build a modern, respo
 
 ```
 cd frontend
+npm install
+npm run dev
 ```
 
+## Root
+
+This is only needed if testing with local docker containers
+
+.env
+
 ```
-npm run dev
+# backend
+PORT=x
+NODE_ENV=development
+PGDATABASE=x
+DATABASE_URL=x
+
+# Watchtower
+GHCR_USERNAME=TianYu-00
+GHCR_TOKEN=x
 ```
 
 ## Docker
 
-Docker Compose
+Docker Compose For Production
 
 ```yml
 version: "3.9"
