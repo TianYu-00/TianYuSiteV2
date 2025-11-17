@@ -1,6 +1,6 @@
 name: Build & Push Docker Images
 
-# Trigger only on push to production branch
+# Trigger only on push to x branch
 on:
   push:
     branches:
@@ -21,6 +21,10 @@ jobs:
       # Checkout repo
       - name: Checkout code
         uses: actions/checkout@v3
+
+      # Enable Docker Buildx for multi-arch builds
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
 
       # Log in to GitHub Container Registry
       - name: Log in to GHCR
