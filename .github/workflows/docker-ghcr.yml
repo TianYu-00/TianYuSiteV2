@@ -12,6 +12,9 @@ jobs:
     env:
       GHCR_USERNAME: ${{ github.actor }}
       GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
+      NODE_ENV: production
+      PGDATABASE: ${{ secrets.PGDATABASE }}
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
     steps:
       # Checkout repo
