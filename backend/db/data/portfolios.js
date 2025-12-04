@@ -1,4 +1,4 @@
-// npm run seed-prod
+// npm run seed-prod2
 /*
   {
     portfolio_name: "",
@@ -14,6 +14,19 @@
 */
 
 module.exports = [
+  {
+    portfolio_name: "Bilibili Stream Manager",
+    portfolio_short_description:
+      "Bilibili Live Manager is a clean and minimalist livestream assistant tool. It features a user-friendly interface, supports QR-code login, and allows you to set the stream category and title with ease. When you go live, it automatically provides the stream URL and stream key, with one-click copying supported for convenient use in OBS or other third-party streaming software.",
+    portfolio_start_date: "2025-07-17",
+    portfolio_project_type: "Personal Project",
+    portfolio_media_src:
+      "https://res.cloudinary.com/dbt8kmup9/image/upload/v1764876788/Bilibili-Live-Manager_l9e3a8.gif",
+    portfolio_media_src_type: "gif",
+    portfolio_youtube: "",
+    portfolio_github: "https://github.com/TianYu-00/Bilibili-Stream-Manager",
+    portfolio_demo: "",
+  },
   {
     portfolio_name: "SE - Events Platform",
     portfolio_short_description:
@@ -103,7 +116,8 @@ module.exports = [
       "PSM is a simple server-creating & managing tool, offering features like RCON support, Discord webhook, PalWorldSetting edit, configurable auto backup, auto server restart, and restart schedules etc.",
     portfolio_start_date: "2024-01-25",
     portfolio_project_type: "Personal Project",
-    portfolio_media_src: "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759194071/PalworldServerManager_urg93a.gif",
+    portfolio_media_src:
+      "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759194071/PalworldServerManager_urg93a.gif",
     portfolio_media_src_type: "gif",
     portfolio_youtube: "",
     portfolio_github: "https://github.com/TianYu-00/PalworldServerManager",
@@ -127,7 +141,8 @@ module.exports = [
       "A small prototype project suggested by AI when asked. The primary objective is to reach the finish point.",
     portfolio_start_date: "2023-03-08",
     portfolio_project_type: "Personal Project",
-    portfolio_media_src: "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759194128/2.5D-Clone-Platformer_x8uqbn.gif",
+    portfolio_media_src:
+      "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759194128/2.5D-Clone-Platformer_x8uqbn.gif",
     portfolio_media_src_type: "gif",
     portfolio_youtube: "https://youtu.be/1936MOAyG1g",
     portfolio_github:
@@ -140,7 +155,8 @@ module.exports = [
       "This is a demonstration project showcasing the mechanics of walking, aiming, and shooting.",
     portfolio_start_date: "2023-07-03",
     portfolio_project_type: "Personal Project",
-    portfolio_media_src: "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759194977/3D-Third-Person-Shooter_q0tii0.gif",
+    portfolio_media_src:
+      "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759194977/3D-Third-Person-Shooter_q0tii0.gif",
     portfolio_media_src_type: "gif",
     portfolio_youtube: "https://youtu.be/sYDjvAt8WiA",
     portfolio_github: "",
@@ -152,7 +168,8 @@ module.exports = [
       "Platformer game set in a 2D environment where the player has the freedom to place blocks in place during their movement. The primary objective is to reach the finish point while bypassing obstacles.",
     portfolio_start_date: "2020-11-16",
     portfolio_project_type: "University Project",
-    portfolio_media_src: "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759194175/2D-Light-Dark-Theme-Platformer_egotxz.gif",
+    portfolio_media_src:
+      "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759194175/2D-Light-Dark-Theme-Platformer_egotxz.gif",
     portfolio_media_src_type: "gif",
     portfolio_youtube: "https://youtu.be/eNoeY-UQapw",
     portfolio_github:
@@ -193,7 +210,8 @@ module.exports = [
       "Single player card game with fixed deck where strategic use of unique card abilities and mana management is crucial.",
     portfolio_start_date: "2022-05-16",
     portfolio_project_type: "University Project",
-    portfolio_media_src: "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759195000/2D-Collectable-Card-Game_vruxpi.gif",
+    portfolio_media_src:
+      "https://res.cloudinary.com/dbt8kmup9/image/upload/v1759195000/2D-Collectable-Card-Game_vruxpi.gif",
     portfolio_media_src_type: "gif",
     portfolio_youtube: "https://youtu.be/-KPOI8hnoa0",
     portfolio_github:
