@@ -23,20 +23,7 @@ services:
     restart: unless-stopped
     networks:
       - tianyu-website-network
-
-  watchtower:
-    image: containrrr/watchtower
-    restart: unless-stopped
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    environment:
-      - WATCHTOWER_CLEANUP=true
-      - WATCHTOWER_POLL_INTERVAL=30
-      - GHCR_USERNAME=${GHCR_USERNAME}
-      - GHCR_TOKEN=${GHCR_TOKEN}
-    networks:
-      - tianyu-website-network
-
+      
 networks:
   tianyu-website-network:
     driver: bridge
