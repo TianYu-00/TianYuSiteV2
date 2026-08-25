@@ -1,3 +1,4 @@
+// cd backend
 // npm run seed-prod2
 /*
   {
@@ -14,6 +15,30 @@
 */
 
 module.exports = [
+  {
+    portfolio_name: "Froggy Tabs",
+    portfolio_short_description:
+      "A customizable browser start page built with React and Vite. Froggy Tabs provides a clean dashboard with a clock, search, bookmarks, weather information, quotes, customizable settings, and dynamic backgrounds.",
+    portfolio_start_date: "2025-11-18",
+    portfolio_project_type: "Personal Project",
+    portfolio_media_src: "https://res.cloudinary.com/dbt8kmup9/image/upload/v1787689443/froggy-tabs_bmc5nj.gif",
+    portfolio_media_src_type: "gif",
+    portfolio_youtube: "",
+    portfolio_github: "https://github.com/tianyu-00/froggy-tabs",
+    portfolio_demo: "",
+  },
+  {
+    portfolio_name: "Job Tracker",
+    portfolio_short_description:
+      "A full-stack job application tracking platform built with React, Vite, Node.js, Express, Playwright, and PostgreSQL, designed to streamline the job search process by allowing users to manage and track applications through an intuitive dashboard while automatically scraping job listings from online. The application uses a REST API to connect the frontend and backend, with a modular architecture separating the UI, API routes, controllers, scraping services, browser automation, and database layer.",
+    portfolio_start_date: "2026-05-29",
+    portfolio_project_type: "Personal Project",
+    portfolio_media_src: "https://res.cloudinary.com/dbt8kmup9/image/upload/v1787683946/Job-Tracker_nsrdih.gif",
+    portfolio_media_src_type: "gif",
+    portfolio_youtube: "",
+    portfolio_github: "https://github.com/tianyu-00/job-application-tracker",
+    portfolio_demo: "",
+  },
   {
     portfolio_name: "Bilibili Stream Manager",
     portfolio_short_description:
